@@ -149,6 +149,7 @@ export default {
       height: 100%;
       opacity: 0;
       background-color: $black-08;
+      border-radius: 10px;
       transition: opacity 0.2s linear;
     }
   }
