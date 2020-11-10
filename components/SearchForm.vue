@@ -66,7 +66,8 @@ export default {
 
   methods: {
     handleSubmit() {
-      console.log('submitted', this.inputValue)
+      const requestValue = this.inputValue.replace(/\s+/g, '-').toLowerCase()
+      this.$router.push(`/search?keyword=${requestValue}`)
     },
   },
 }
