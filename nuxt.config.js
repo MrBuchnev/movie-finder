@@ -19,7 +19,9 @@ export default {
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [],
+  plugins: [
+    { src: '~/plugins/VueFlickity.js', ssr: false }
+  ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
@@ -47,5 +49,10 @@ export default {
     scss: [
       '~/assets/scss/variables/_vars.scss',
     ],
+  },
+
+  // Environment variables
+  env: {
+    apiUrl: 'http://www.omdbapi.com/?apikey=50606fd'
   },
 }
