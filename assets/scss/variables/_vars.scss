@@ -3,4 +3,17 @@ $transparent: rgba(0, 0, 0, 0.001);
 $white: #FFFFFF;
 $black: #000000;
 $black-05: rgba($black, 0.5);
+$black-08: rgba($black, 0.8);
 $grey: #35495e;
+
+/* Sizes */
+$screen-xlg-min: 1366px;
+
+$screen-lg-max: $screen-xlg-min - 1;
+$screen-lg-min: 1024px;
+
+$screen-md-max: $screen-lg-min - 1;
+$screen-md-min: 768px;
+
+$screen-sm-max: $screen-md-min - 1;
+$screen-sm-min: 320px;
